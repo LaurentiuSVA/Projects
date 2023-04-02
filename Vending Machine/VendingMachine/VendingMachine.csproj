@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>iQuest.VendingMachine</AssemblyName>
+    <RootNamespace>iQuest.VendingMachine</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VendingMachina.DataAccess.InMemory\VendingMachine.DataAccess.InMemory.csproj" />
+    <ProjectReference Include="..\VendingMachina.DataAccess.Sql\VendingMachine.DataAccess.Sql.csproj" />
+    <ProjectReference Include="..\VendingMachine.Business\VendingMachine.Business.csproj" />
+    <ProjectReference Include="..\VendingMachine.Presentation\VendingMachine.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>
